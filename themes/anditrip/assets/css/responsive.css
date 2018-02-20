@@ -1,0 +1,254 @@
+/*Tablet*/
+@media (min-width: 690px) and (max-width: 1200px) {
+.header_top .navbar-header img {
+    margin-left: 50px;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+        background: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ca151c;
+}
+.sub-titulo {
+    font-size: 13px;
+}
+.plans {
+    display: none;
+    }
+    .destinys {
+    width: 100%;
+    margin-right: 0em;
+  
+}
+.glyphicon-plans {
+    
+    right: -63px;
+}
+.reviews{
+	display: none;
+}
+.glyphicon-reviews {
+    top: 100px;
+    color: #ca151c;
+    margin-right: 380px!important;
+}
+.destinys {
+    width: 90%;
+     margin-right: 0em;
+    margin-left: 4em;
+}
+#footer.img-responsive{
+	max-width: 46%;
+}
+
+}
+/*Fin Tablet*/
+
+1440
+
+
+
+@media screen and (min-width:0px) and (max-width:900px) {
+  .plans {
+    display: none;
+  }
+  .destinys {
+    width: 94%;
+    height: 100%;
+    margin-right: 0em;
+    margin-top: 1em;
+    margin-left: 27px;
+}
+.glyphicon-plans {
+  
+    right: -67px;
+}
+figure.effect:hover p {
+    margin-top: -9px;
+}
+.reviews h3 {
+   margin-right: -11px;
+   font-size: 23px;
+}
+.reviews p {
+  margin-right: -33px;
+}
+ 
+}
+@media (min-width: 400px) and (max-width: 999px){
+  .navbar-default .navbar-toggle {
+    background: #fff;
+   
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ca151c;
+}
+.header_top .navbar-header img {
+    margin-left: 21px;
+}
+.img-slider {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.sub-titulo {
+    font-size: 12px;
+
+}
+.cards-blog {
+    margin-bottom: 20px;
+}
+.cards-blog {
+    box-shadow: 2px 1px 2px #D2D2D1;
+    width: 84%;
+    margin-left: 27px;
+}
+.glyphicon-reviews {
+    margin-right: 3px!important;
+}
+.plans {
+    display: none;
+ 
+}
+}
+
+/*@media (min-width: 767px) and (min-width: 991){
+
+ .destinys {
+    width: 504%;
+    height: 100%;
+    margin-right: 0em;
+    margin-top: 1em;
+}
+
+.plans {
+    display: none;
+
+}
+}
+
+*/
+
+
+
+
+@media (min-width: 320px) and (max-width:680px){
+
+.navbar-default .navbar-toggle {
+    border-color: #bfbfbf;
+    background: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ca151c;
+}
+.sub-titulo {
+    padding: 5px;
+
+}
+.plans {
+    display: none;
+}
+.rejilla6 {
+    display: block;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.glyphicon-plans {
+   
+    right: 215px!important;
+   display: none;
+}
+.border-separacion-plans {
+    
+    margin-left: 76px;
+
+    width: 113%;
+
+}
+
+.destinys {
+    margin-left: 0.5em;
+}
+.glyphicon-reviews {
+      margin-left: 136px!important;
+       display: none;
+}
+.reviews{
+    display: none;
+}
+.row {
+
+    margin-left: -37px!important;
+}
+  .cards-blog {
+    margin-bottom: 15px;
+}
+.blog-section {
+    margin-left: 15px;
+}
+
+#logo {
+ display: block;
+ width: 17em;
+     margin-left: 46px;
+    
+}
+.footer-why{
+display: none;
+}
+#footer {
+text-align: center;
+}
+.header_top .navbar-header img {
+    margin-left: 13px;
+}
+}
+
+
+
+
+
+/*
+
+/*Laptop pequeña
+@media (min-width: 992px) and (max-width: 1280px){
+  .mejor {
+    display: block;
+  
+}
+.destinys {
+    width: 90%;
+    margin-left: 52px;
+    height: 100%;
+    margin-right: 0em;
+    margin-top: 1em;
+ }
+ .glyphicon-plans {
+    right: -47px;
+}
+.plans {
+    margin-left: 52px;
+    width: 91%;
+    height: 30%;
+    /* margin-left: 3em; */
+  /*  margin-top: 1em;
+}
+.plan .card {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 3em;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    height: 217px;
+}
+.reviews h3 {
+    margin-right: -18px;
+  
+}
+.reviews p {
+    margin-right: -32px;
+}
+/*Fin Laptop pequeña*/
+
+
+*/

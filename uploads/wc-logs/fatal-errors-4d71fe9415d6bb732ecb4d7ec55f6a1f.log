@@ -1,0 +1,34 @@
+2018-02-19T21:25:11+00:00 CRITICAL Uncaught Error: Call to undefined function get_info() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/header.php:72
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/home.php(1): include()
+#1 /var/www/html/anditrip_colombia/wp-includes/template-loader.php(74): include('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/wp-blog-header.php(19): require_once('/var/www/html/a...')
+#3 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#4 {main}
+  thrown
+
+2018-02-19T21:26:08+00:00 CRITICAL Uncaught Error: Call to undefined function get_info() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/header.php:72
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/home.php(1): include()
+#1 /var/www/html/anditrip_colombia/wp-includes/template-loader.php(74): include('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/wp-blog-header.php(19): require_once('/var/www/html/a...')
+#3 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#4 {main}
+  thrown
+
+2018-02-20T06:20:04+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_views() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/page.php:7
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/anditrip_colombia/wp-blog-header.php(19): require_once('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#3 {main}
+  thrown
+
+2018-02-20T06:20:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_views() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/page.php:7
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/anditrip_colombia/wp-blog-header.php(19): require_once('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#3 {main}
+  thrown
+
