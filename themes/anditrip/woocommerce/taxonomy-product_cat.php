@@ -1,4 +1,24 @@
-<?php include('../header.php'); ?>
+<!-- traducir -->
+<?php $currentlang = get_bloginfo('language');
+if($currentlang=="en-US"):
+    //about
+      $about = 'About Us';
+      $description_about = 'We are Anditrip, your travel agent, we wanna share with you the amazing culture and experience that Latin America offers. Come with us.';
+      $quick_contact = 'Quick Contact';
+      $colombia_footer = 'Colombia';
+     
+?>
+<?php else:
+  //traducción chino
+    //about
+      $about = '關於我們';
+      $description_about = '我們是Anditrip，您的旅行社，我們想與您分享拉丁美洲提供的驚人文化和體驗。跟我們來。';
+      $quick_contact = '快速聯繫';
+      $colombia_footer = '哥倫比亞';
+ ?>
+<?php endif; ?>
+
+
 <?php get_header(); ?>
 <?php if ( is_product_category() ){
     global $wp_query;
@@ -18,7 +38,7 @@
 background-size: cover!important;">
 	<article class="container">
 		<header class="row destiny-header">
-				<a href="#" class="separacion" style="color: #000;"><?php echo $colombia_footer; ?></a>
+				<!-- <a href="#" class="separacion" style="color: #000;"><?php echo $colombia_footer; ?></a> -->
 			<h1><?php echo $cat->name; ?></h1>
 		</header>
 	</article>
@@ -73,18 +93,20 @@ background-size: cover!important;">
 
 </div>
 <div class="plan-destiny">
+	<a href="<?php the_permalink(); ?>">
 	<h2 class="separacion"><?php the_title(); ?></h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p><?php echo the_content(); ?></p>
+</a>
 </div>
 </div>
 <div class="atributes-plan">
-		<a href="#" class="text-left"><i class="fa fa-calendar-o"></i> <?php echo get_post_meta( get_the_ID(), 'Days', true ); ?> Days</a>
+		<a href="<?php the_permalink(); ?>" class="text-left"><i class="fa fa-calendar-o"></i> <?php the_field('days_anditrip'); ?> Days</a>
     <?php if (get_post_meta( get_the_ID(), 'Domestic_tickets', true )): ?>
       <a href="#" class="text-left"> <i class="fa fa-plane"></i> Domestic flight tickets </a>
 		<?php endif; ?>
 
     <?php if (get_post_meta( get_the_ID(), 'Alojamiento', true )): ?>
-    <a href="#" class="text-left"> <i class="fa fa-building"></i> Hotel </a>
+    <a href="<?php the_permalink(); ?>" class="text-left"> <i class="fa fa-building"></i> Hotel </a>
   <?php endif; ?>
     <a href="<?php the_permalink(); ?>" class="text-right"><?php echo $product->get_price_html(); ?></a>
 	</div>

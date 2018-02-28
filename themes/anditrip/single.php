@@ -40,7 +40,7 @@
     				  <i class="glyphicon glyphicon-triangle-bottom glyphicon-reviews"></i>
       				  <h2 class="separacion separacion_top"><span><?php echo $description_offers; ?></span></h2>
    				</div>
-       			<p><?php the_content(); ?></p>l
+       			<p><?php the_content(); ?></p>
        		</div>	
 
        	</div>

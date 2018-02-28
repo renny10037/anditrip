@@ -152,7 +152,7 @@ if($currentlang=="en-US"):
               <li><a href="<?php echo bloginfo('url');?>"><?php echo $home;?></a></li>
               <li><a href="<?php echo bloginfo('url').'/#destinations-plans';?>"><?php echo $destinations_and_plans; ?></a></li>
               <li><a href="<?php echo bloginfo('url').'/#reviews';?>"><?php echo $reviews;?></a></li>
-              <li><a href="<?php echo bloginfo('url').'/#colombia';?>"><?php echo $why;?></a></li>
+              <li><a href="<?php echo bloginfo('url').'/#colombia';?>"><?php echo $colombia;?></a></li>
               <li><a href="<?php echo bloginfo('url').'/#blog';?>"><?php echo $blog;?></a></li>
               <li><a href="#footer?>"><?php echo $contact;?></a></li>
               
@@ -164,3 +164,5 @@ if($currentlang=="en-US"):
     </div>
   </nav>
 </header>
+<div class="test">
+  

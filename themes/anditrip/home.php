@@ -92,11 +92,10 @@
             ?>
             <?php while( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
               <div class="plan">
+                <a href="<?php the_permalink(); ?>">
                 <div class="card gris">
                   <div class="card-thumb">
-                    <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail(); ?>   
-                    </a>
                   </div>
                   <div class="plan-content">
                     <p class="text-center"><?php the_title(); ?></p>
@@ -110,6 +109,7 @@
                     </div>
                   </div>
                 </div>
+              </a>
               </div>
             <?php endwhile;
             wp_reset_query();

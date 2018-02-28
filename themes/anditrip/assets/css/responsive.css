@@ -76,6 +76,7 @@ figure.effect:hover p {
 }
  
 }
+1440
 @media (min-width: 400px) and (max-width: 999px){
   .navbar-default .navbar-toggle {
     background: #fff;
@@ -111,7 +112,20 @@ figure.effect:hover p {
     display: none;
  
 }
+.sidebar-destiny{
+    display: none;
 }
+.container-fluid{
+    margin-top: -74px;
+}
+.destinys-content {
+    width: 100%;
+}
+.navbar-principal ul li a{
+    padding-left: 3!important;
+}
+}
+
 
 /*@media (min-width: 767px) and (min-width: 991){
 
@@ -203,6 +217,10 @@ text-align: center;
 .header_top .navbar-header img {
     margin-left: 13px;
 }
+.sidebar-destiny{
+    display: none;
+}
+
 }
 
 
