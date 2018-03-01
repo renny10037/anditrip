@@ -42,7 +42,7 @@
    				</div>
        			<p><?php echo the_content(); ?></p>
        		</div>	
-
+            <a class="btn btn-default"href="<?php the_field('url_offers'); ?>">Offers</a>
        	</div>
        </div>
         </div>

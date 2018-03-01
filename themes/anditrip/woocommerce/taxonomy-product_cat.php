@@ -12,7 +12,7 @@ if($currentlang=="en-US"):
   //traducción chino
     //about
       $about = '關於我們';
-      $description_about = '我們是Anditrip，您的旅行社，我們想與您分享拉丁美洲提供的驚人文化和體驗。跟我們來。';
+      $description_about = 'nditrip，您的旅行社，我們想與您分享拉丁美洲提供的驚人文化和體驗。跟我們來。';
       $quick_contact = '快速聯繫';
       $colombia_footer = '哥倫比亞';
  ?>
@@ -94,13 +94,13 @@ background-size: cover!important;">
 </div>
 <div class="plan-destiny">
 	<a href="<?php the_permalink(); ?>">
-	<h2 class="separacion"><?php the_title(); ?></h2>
+	<h2 class="separacion"><?php echo the_title(); ?></h2>
 	<p><?php echo the_content(); ?></p>
 </a>
 </div>
 </div>
 <div class="atributes-plan">
-		<a href="<?php the_permalink(); ?>" class="text-left"><i class="fa fa-calendar-o"></i> <?php the_field('days_anditrip'); ?> Days</a>
+		<a href="<?php the_permalink(); ?>" class="text-left"><i class="fa fa-calendar-o"></i> <?php the_field('days_anditrip'); ?></a>
     <?php if (get_post_meta( get_the_ID(), 'Domestic_tickets', true )): ?>
       <a href="#" class="text-left"> <i class="fa fa-plane"></i> Domestic flight tickets </a>
 		<?php endif; ?>

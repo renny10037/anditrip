@@ -1,86 +1,66 @@
 <!-- traducir -->
 <?php $currentlang = get_bloginfo('language');
 if($currentlang=="en-US"):
-  //home
-    //carrusel
-      $view = 'Book Now'; 
-    //navbar1
-      $money_dollar = 'Dollar';
-      $money_yuan = 'Yuan';
-    //navbar2
-      $home = "Home";
-      $destinations_and_plans = 'Destinations and plans';
-      $reviews = 'Reviews'; 
-      $colombia = 'Colombia';
-      $blog = 'Blog';
-      $contact = 'Contact'; 
-    //por que colombia
-      $why= 'Why Colombia?';
-      $colombia_description = "There's a place where kindness, joy, diversity, flavor and music come together"; 
-    //home-description
-      $description = 'Come explore Latin America with us and enjoy the best trip of your life. We offer Trips to every end of the colombia';
-    //home pplanes y destinos
-      $destinations = 'Destinations'; 
-      $plans = 'Plans';
-
-    //post
-      $read = 'Read More'; 
-
+    //content-sigle-product
+      //button
+        $button = 'Buy';
+      //description
+        $description = 'Description';
+        //include
+          $include = 'include';
+          $domestic = 'Domestic flight tickets in economic class';
+          $accommodation = 'Accommodation';
+          $food = 'Food';
+          $language = 'Language';
+          $tours = 'Tours';
+          $medical = 'Medical assistance card';
+      //no include
+          $no_include = 'No Include';
+      //itinerary
+        $itinerary = 'Itinerary Provided';
+        $itinerary_provided = 'Itinerary Provided';
+      // Important
+        $important = 'Important';
+      //descargar
+        $download = 'Download Itinerary';
     //about
       $about = 'About Us';
       $description_about = 'We are Anditrip, your travel agent, we wanna share with you the amazing culture and experience that Latin America offers. Come with us.';
       $quick_contact = 'Quick Contact';
       $colombia_footer = 'Colombia';
      
-
-  //page -> oferta
-    //description
-      $description_offers = 'Description';
 ?>
 <?php else:
   //traducción chino
-  //home
-    //carrusel
-      $view = '查看更多'; 
-      //navbar1
-      $money_dollar = '美元';
-      $money_yuan = '元';
-    //navbar2
-      $home = "家";
-      $destinations_and_plans = '目的地和計劃';
-      $reviews = '評測'; 
-      $colombia = '哥倫比亞';
-      $blog = '博客';
-      $contact = '聯繫'; 
-
-    //pplanes y destinos
-      $destinations = '目的地'; 
-      $plans = '計劃';
-
-    //por que colombia
-      $why = '為何選擇哥倫比亞'; 
-      $colombia_description = "有一個地方，善良，喜悅，多樣性，味道和音樂匯聚在一起";
-    //home-description
-      $description = '快來和我們一起探索拉丁美洲，享受你生命中最美好的旅程。我們為哥倫比亞的每一端提供旅行';
-    //home pplanes y destinos
-      $destinations = '目的地'; 
-      $plans = '計劃';
-
-    //post
-      $read = '目的地'; 
-     
-
+    //content-sigle-product
+      //button
+        $button = '在波';
+      //description
+        $description = '在波在波';
+        //include
+          $include = '在波哥';
+          $domestic = '在波哥大與蒙塞拉特市遊覽';
+          $accommodation = '在波哥大與蒙塞拉特市遊覽';
+          $food = '大廳大教堂';
+          $language = '大廳大教堂';
+          $tours = '大廳大教堂';
+          $medical = '在波哥大與蒙塞拉特市遊覽';
+        //no include
+          $no_include = '特市';
+      //itinerary
+        $itinerary = '大廳大教堂';
+        $itinerary_provided = '大廳大教堂';
+      // Important
+        $important = '大廳大教堂';
+      //descargar
+        $download = '大廳大教堂';
+ 
     //about
       $about = '關於我們';
       $description_about = '我們是Anditrip，您的旅行社，我們想與您分享拉丁美洲提供的驚人文化和體驗。跟我們來。';
       $quick_contact = '快速聯繫';
       $colombia_footer = '哥倫比亞';
-   
-
-  //page -> oferta
-    //description
-      $description_offers = '描述';
-    
+       
  ?>
 <?php endif; ?>
 <?php
@@ -104,16 +84,9 @@ if($currentlang=="en-US"):
 if ( ! defined( 'ABSPATH' ) ) {
   exit; // Exit if accessed directly
 }
-
+global $product;
 get_header(); ?>
-<?php
-$args = array(
-  'post_type' => 'product',
-);
-$loop = new WP_Query( $args );
 
-?>
-<?php if( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
   <?php $post_thumbnail_id = get_post_thumbnail_id();
   $url = wp_get_attachment_url( $post_thumbnail_id);
   ?>
@@ -224,7 +197,7 @@ $loop = new WP_Query( $args );
     <div class="sidebar-destiny card-compra  comprar-plan">
       <div class="widget ">
         <div class="widget-one">
-          <h3 class="text-center separacion">Buy</h3>
+          <h3 class="text-center separacion"><?php echo $button; ?></h3>
           <div class="widget-destiny">
             
             <?php
@@ -301,18 +274,18 @@ $loop = new WP_Query( $args );
         <li class="tab fancyTab active">
           <!-- <div class="arrow-down"> <div class="arrow-down-inner"></div> </div>   -->
           <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0">
-            <h4 class="hidden-x">Description</h4></a>
+            <h4 class="hidden-x"><?php echo $description; ?></h4></a>
             <div class="whiteBlock"></div>
           </li>
           <li class="tab fancyTab">
             <!--  <div class="arrow-down"><div class="arrow-down-inner"> </div> </div> -->
-            <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"></span><h4 class="hidden-x">Itinerary</h4></a>
+            <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"></span><h4 class="hidden-x"><?php echo $itinerary; ?></h4></a>
             <div class="whiteBlock"></div>
           </li>
 
           <li class="tab fancyTab">
             <!-- <div class="arrow-down"><div class="arrow-down-inner"></div></div> -->
-            <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"></span><h4 class="hidden-xs">Important</h4></a>
+            <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"></span><h4 class="hidden-xs"><?php echo $important; ?></h4></a>
             <div class="whiteBlock"></div>
           </li>
         </ul>
@@ -324,52 +297,41 @@ $loop = new WP_Query( $args );
                 <div class="col-md-6">
                   <div class="plan-descripcion include">
 
-                    <h2 class="">Includes</h2>
+                    <h2 class=""><?php echo $include; ?></h2>
 
                     <div class="border-include"></div>
                     <i class="glyphicon glyphicon-triangle-to arrow-planss"></i>
-                    <h3><i class="fa fa-plane"></i><span>Domestic flight tickets in economic class</span></h3>
+                    <h3><i class="fa fa-plane"></i><span><?php echo $domestic; ?></span></h3>
 
-                    <p><?php the_field('domestic'); ?></p>
+                    <p><?php the_field('domestic_include'); ?></p>
                     <h3>
                       <i class="fa fa-building"></i>
-                      <span>Accommodation</span></h3>
-                      <p><?php the_field('acommodation'); ?></p>
-                      <h3><i class="fa fa-cutlery"></i><span>Food</span></h3>
-                      <p>descripcion-icon"></i><?php the_field('food_anditrip'); ?></p>
+                      <span><?php echo $accommodation; ?></span></h3>
+                      <p><?php the_field('acommodation_include'); ?></p>
+                      <h3><i class="fa fa-cutlery"></i><span><?php echo $food; ?></span></h3>
+                      <p></i><?php the_field('food_include'); ?></p>
 
-                      <h3><i class="fa fa-comments-o"></i><span>Language</span></h3>
-                      <p><?php the_field('language_anditrip'); ?></p>.
-                      <h3><i class="fa fa-globe"></i><span>Tours</span></h3>
+                      <h3><i class="fa fa-comments-o"></i><span><?php echo $language; ?></span></h3>
+                      <p><?php the_field('language_include'); ?></p>.
+                      <h3><i class="fa fa-globe"></i><span><?php echo $tours; ?></span></h3>
 
-                      <p><?php the_field('tours_anditrip'); ?></p>
+                      <p><?php the_field('tours_include'); ?></p>
 
-                        <h3><i class="fa fa-user-md"></i><span>Medical assistance card</span></h3>
-                        <p> <?php the_field('multiidioma'); ?></p>
+                        <h3><i class="fa fa-user-md"></i><span><?php echo $medical; ?></span></h3>
+                        <p><?php the_field('card_medical_include'); ?></p>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="plan-descripcion no-includesepar">
 
 
-                        <h2 class="">Does not includes</h2>
+                        <h2 class=""><?php echo $no_include; ?></h2>
 
                         <div class="border-include"></div>
                      
-                        <h4><i class="fa fa-ticket icon-off"></i><span>
-                          International air ticket</span></h4>
-
-                          <h4><i class="fa fa-usd icon-off"></i><span>Cartagena Port tax 7 Usd approx.</span></h4>
-                          <h4><i class="fa fa-building icon-off"></i><span>Volunteer hotel insurance to pay at the hotel.</span></h4>
-
-
-                          <h4><i class="fa fa-cutlery icon-off"></i><span>Feeding not described</span></h4>
-
-                          <h4><i class="fa fa-comments-o icon-off"></i><span>Suggested activities are not included in the program price</span></h4>
-
-                          <h4><i class="fa fa-money icon-off"></i><span>Not stipulated or personal expenses and tips</span></h4>
 
                         </div>
+                          <?php the_field('description_no_include'); ?>
 
                       </div>
                     </div>
@@ -378,23 +340,24 @@ $loop = new WP_Query( $args );
                 <div class="tab-pane plan-descripcion itinerario fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
                   <div class="row">
                     <div class="col-md-12">
-                      <h2 class="">Itinerary Provided</h2>
+                      <h2 class=""><?php echo $itinerary_provided; ?></h2>
 
                       <div class="border-include"></div>
                       <i class="glyphicon glyphicon-triangle-to arrow-planss-itinerario"></i>
-                      <p><?php the_field('iterary_anditrip'); ?></p>
-                      <a href="#" class="btn btn-default btn-itinerario">Download Itinerary</a>
+                      <p><?php the_field('iterary_include'); ?></p>
+                      <a href="<?php the_field('download');?>" download class="btn btn-default btn-itinerario"><?php echo $download; ?></a>
+
                     </div>
                   </div>
                 </div>
-              <?php endif; ?>
+           
               <div class="importante tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
                 <div class="row">
                   <div class="col-md-12">
-                    <h2 class="text-ceter">Important</h2>
+                    <h2 class="text-ceter"><?php echo $important; ?></h2>
                     <div class="border-include"></div>
                     <i class="glyphicon glyphicon-triangle-top importante-icon"></i>
-                    <p><?php the_field('important_anditrip'); ?></p>
+                    <p><?php the_field('important_include'); ?></p>
 
                     </div>
                   </div>

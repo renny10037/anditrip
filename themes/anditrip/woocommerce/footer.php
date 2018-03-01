@@ -27,14 +27,17 @@
 			<div class="col-md-3 col-sm-6 col-xs-12">
 				<div class="footer-single footer-space footer-why">
 					<h3><?php echo $colombia_footer; ?></h3>
+					
+		
 					<ul>
-						<li><a href="">- Geographic position</a></li>
-						<li><a href="">- How to get?</a></li>
-						<li><a href="">- Weather</a></li>
-						<li><a href="">- Culture</a></li>
-						<li><a href="">- Currency</a></li>
-						<li><a href="">- Language</a></li>
-						<li><a href="">- Security</a></li>
+						<li><a href="<?php echo get_site_url().'/index.php/terms';?>">- Geographic position</a></li>
+						<li><a href="<?php echo get_site_url().'/index.php/terms';?>">- How to echo get?</a></li>
+						<li><a href="<?php echo get_site_url().'/index.php/terms';?>">- Weather</a></li>
+						<li><a href="<?php echo get_site_url().'/index.php/terms';?>">- Culture</a></li>
+						<li><a href="<?php echo get_site_url().'/index.php/terms';?>">- Currency</a></li>
+						<li><a href="<?php echo get_site_url().'/index.php/terms';?>">- Language</a></li>
+						<li><a href="<?php echo get_site_url().'/index.php/terms';?>">- Security</a></li>
+
 					</ul>
 				</div>
 			</div>

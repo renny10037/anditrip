@@ -54,4 +54,3 @@
 			endwhile; // End of the loop.
 			?>
  <?php require('footer.php'); ?>
-

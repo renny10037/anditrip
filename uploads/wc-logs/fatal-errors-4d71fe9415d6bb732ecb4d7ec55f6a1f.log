@@ -298,3 +298,80 @@ Stack trace:
 #6 {main}
   thrown
 
+2018-03-01T02:12:52+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_thumbnail_id() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/woocommerce/content-single-product.php:88
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-includes/template.php(690): require()
+#1 /var/www/html/anditrip_colombia/wp-content/plugins/woocommerce/includes/wc-core-functions.php(179): load_template('/var/www/html/a...', false)
+#2 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/anditrip_colombia/wp-includes/template-loader.php(74): include('/var/www/html/a...')
+#4 /var/www/html/anditrip_colombia/wp-blog-header.php(19): require_once('/var/www/html/a...')
+#5 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#6 {main}
+  thrown
+
+2018-03-01T02:12:54+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_thumbnail_id() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/woocommerce/content-single-product.php:88
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-includes/template.php(690): require()
+#1 /var/www/html/anditrip_colombia/wp-content/plugins/woocommerce/includes/wc-core-functions.php(179): load_template('/var/www/html/a...', false)
+#2 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/anditrip_colombia/wp-includes/template-loader.php(74): include('/var/www/html/a...')
+#4 /var/www/html/anditrip_colombia/wp-blog-header.php(19): require_once('/var/www/html/a...')
+#5 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#6 {main}
+  thrown
+
+2018-03-01T02:13:17+00:00 CRITICAL Uncaught Error: Call to undefined function the_post_thumbnail_id() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/woocommerce/content-single-product.php:88
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-includes/template.php(690): require()
+#1 /var/www/html/anditrip_colombia/wp-content/plugins/woocommerce/includes/wc-core-functions.php(179): load_template('/var/www/html/a...', false)
+#2 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/woocommerce/single-product.php(37): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/anditrip_colombia/wp-includes/template-loader.php(74): include('/var/www/html/a...')
+#4 /var/www/html/anditrip_colombia/wp-blog-header.php(19): require_once('/var/www/html/a...')
+#5 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#6 {main}
+  thrown
+
+2018-03-01T04:15:35+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php:78
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php(110): file_get_contents_tcurl('http://www.zoxf...')
+#1 /var/www/html/anditrip_colombia/wp-settings.php(426): include('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/wp-config.php(81): require_once('/var/www/html/a...')
+#3 /var/www/html/anditrip_colombia/wp-load.php(37): require_once('/var/www/html/a...')
+#4 /var/www/html/anditrip_colombia/wp-admin/admin.php(31): require_once('/var/www/html/a...')
+#5 /var/www/html/anditrip_colombia/wp-admin/options-permalink.php(10): require_once('/var/www/html/a...')
+#6 {main}
+  thrown
+
+2018-03-01T04:15:52+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php:78
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php(110): file_get_contents_tcurl('http://www.zoxf...')
+#1 /var/www/html/anditrip_colombia/wp-settings.php(426): include('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/wp-config.php(81): require_once('/var/www/html/a...')
+#3 /var/www/html/anditrip_colombia/wp-load.php(37): require_once('/var/www/html/a...')
+#4 /var/www/html/anditrip_colombia/wp-admin/admin.php(31): require_once('/var/www/html/a...')
+#5 /var/www/html/anditrip_colombia/wp-admin/index.php(10): require_once('/var/www/html/a...')
+#6 {main}
+  thrown
+
+2018-03-01T04:16:36+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php:78
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php(110): file_get_contents_tcurl('http://www.zoxf...')
+#1 /var/www/html/anditrip_colombia/wp-settings.php(426): include('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/wp-config.php(81): require_once('/var/www/html/a...')
+#3 /var/www/html/anditrip_colombia/wp-load.php(37): require_once('/var/www/html/a...')
+#4 /var/www/html/anditrip_colombia/wp-blog-header.php(13): require_once('/var/www/html/a...')
+#5 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#6 {main}
+  thrown
+
+2018-03-01T04:17:42+00:00 CRITICAL Uncaught Error: Call to undefined function curl_init() in /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php:78
+Stack trace:
+#0 /var/www/html/anditrip_colombia/wp-content/themes/anditrip/functions.php(110): file_get_contents_tcurl('http://www.zoxf...')
+#1 /var/www/html/anditrip_colombia/wp-settings.php(426): include('/var/www/html/a...')
+#2 /var/www/html/anditrip_colombia/wp-config.php(81): require_once('/var/www/html/a...')
+#3 /var/www/html/anditrip_colombia/wp-load.php(37): require_once('/var/www/html/a...')
+#4 /var/www/html/anditrip_colombia/wp-blog-header.php(13): require_once('/var/www/html/a...')
+#5 /var/www/html/anditrip_colombia/index.php(17): require('/var/www/html/a...')
+#6 {main}
+  thrown
+
